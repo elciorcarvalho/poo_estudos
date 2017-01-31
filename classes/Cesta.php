@@ -6,8 +6,8 @@ class Cesta
 
 	public function __construct()
 	{
-		$this->time = date('Y-m-d H:i:s');
-		$this->itens = array();
+		$this->time 	= date('Y-m-d H:i:s');
+		$this->itens 	= array();
 	}
 
 	public function addItens(Produto $p)
