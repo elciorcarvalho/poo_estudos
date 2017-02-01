@@ -7,7 +7,10 @@ class ContaPoupanca extends Conta
 	{
 		if($money <= $this->saldo){
 			$this->saldo -= $money;
+		} else {
+			return false;
 		}
+		return true;
 	}
 
 	public function getTipo()
