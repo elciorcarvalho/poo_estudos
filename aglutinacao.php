@@ -6,7 +6,7 @@ require_once 'classes/Cesta.php';
 $c1 = new Cesta();
 
 $p1 = new Produto('Maçã', 5, 3.8);
-$p2 = new Produto('Pelucia', 1, 55);
+$p2 = new Produto('Pelúcia', 1, 55);
 $p3 = new Produto('Caixa de Bombom', 1, 19);
 
 for($i = 1; $i < 4; $i++){
