@@ -20,7 +20,7 @@ class Conta
 	*/
 	public function getSaldo()
 	{
-		return $this->saldo;
+		return number_format($this->saldo, 2, ",", ".");
 	}
 
 	/**
