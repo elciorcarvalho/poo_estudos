@@ -1,7 +1,7 @@
 <?php
 class ContaPoupanca extends Conta
 {
-	private $tipoConta = 'Poupança';
+	protected $tipoConta = 'Poupança';
 
 	public function saque($money)
 	{
