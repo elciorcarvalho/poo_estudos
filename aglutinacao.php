@@ -1,5 +1,3 @@
-<pre>
-
 <?php
 
 require_once 'classes/Produto.php';
@@ -19,7 +17,3 @@ for($i = 1; $i < 4; $i++){
 foreach($c1->getItens() as $item) {
 	echo 'Item: ' . $item->getDescricao() . "<br>\n";
 }
-
-?>
-
-</pre>
