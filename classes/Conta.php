@@ -24,6 +24,16 @@ class Conta
 	}
 
 	/**
+	* @parametro float: dinheiro a ser depositado
+	*/
+	public function deposito($money)
+	{
+		if($money > 0){
+			$this->saldo += $money;
+		}
+	}
+
+	/**
 	* @return string: informações sobre conta e agência
 	*/
 	public function getInfo()
