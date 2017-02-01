@@ -3,10 +3,10 @@ class ContaPoupanca extends Conta
 {
 	private $tipoConta = 'Poupança';
 
-	public function deposito($money)
+	public function saque($money)
 	{
-		if($money > 0){
-			$this->saldo += $money;
+		if($money <= $this->saldo){
+			$this->saldo -= $money;
 		}
 	}
 
