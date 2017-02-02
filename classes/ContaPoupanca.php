@@ -1,5 +1,5 @@
 <?php
-class ContaPoupanca extends Conta
+final class ContaPoupanca extends Conta
 {
 	protected $tipoConta = 'Poupança';
 
