@@ -7,8 +7,19 @@ abstract class Pessoa
 
 	public function __construct($nome, $nascimento)
 	{
-		$this->nome 		= $nome;
-		$this->nascimento 	= $nascimento;
+		if(is_string($nome)){
+			$this->nome	= $nome;
+		} else {
+			echo '<p>Não foi prossível configurar o nome.</p>';
+			return false;
+		}
+
+		if(is_numeric($nascimento) && $nascimento > 1900 && $nascimento < date('Y')){
+			$this->nascimento = $nascimento;
+		} else {
+			$this->nascimento = 0;
+			echo '<p>Não foi prossível configurar a idade.</p>';
+		}
 	}
 
 	public function getNome()
@@ -18,7 +29,6 @@ abstract class Pessoa
 
 	public function getIdade()
 	{
-		$this->idade = date('Y') - $this->nascimento;
-		return $this->idade;
+		return $this->idade = date('Y') - $this->nascimento;			
 	}
 }

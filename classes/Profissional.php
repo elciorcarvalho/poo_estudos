@@ -6,7 +6,13 @@ class Profissional extends Pessoa
 	public function __construct($nome, $nascimento, $profissao)
 	{
 		parent::__construct($nome, $nascimento);
-		$this->profissao = $profissao;
+		if(is_string($profissao)){
+			$this->profissao = $profissao;
+		} else {
+			echo '<p>Não foi prossível configurar a profissão.</p>';
+			return false;
+		}
+		return true;
 	}
 
 	public function getProfissao()
