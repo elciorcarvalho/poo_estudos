@@ -33,6 +33,11 @@ class Conta
 		}
 	}
 
+	abstract function saque($money)
+	{
+		//...codigo
+	}
+
 	/**
 	* @return string: informações sobre conta e agência
 	*/
