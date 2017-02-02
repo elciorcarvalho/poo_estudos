@@ -10,3 +10,5 @@ require_once 'classes/ContaPoupanca.php';
 
 // Erro por instanciar uma classe abstrata
 //$c = new Conta('123456789', '1234');
+
+echo '<p>Fim do programa!</p>';
