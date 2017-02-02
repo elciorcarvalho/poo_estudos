@@ -1,5 +1,5 @@
 <?php
-class Conta
+abstract class Conta
 {
 	protected $conta;
 	protected $agencia;
@@ -33,10 +33,7 @@ class Conta
 		}
 	}
 
-	abstract function saque($money)
-	{
-		//...codigo
-	}
+	abstract function saque($money);
 
 	/**
 	* @return string: informações sobre conta e agência
