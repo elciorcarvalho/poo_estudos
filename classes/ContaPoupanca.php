@@ -1,6 +1,8 @@
 <?php
 final class ContaPoupanca extends Conta
 {
+	const GERENTE = 'Sr. Elcior Santana';
+
 	protected $tipoConta = 'Poupança';
 
 	public function saque($money)
@@ -16,5 +18,10 @@ final class ContaPoupanca extends Conta
 	public function getTipo()
 	{
 		return $this->tipoConta;
+	}
+
+	public function getGerente()
+	{
+		return self::GERENTE;
 	}
 }
