@@ -8,8 +8,7 @@ class Pessoa2
 	public function __construct($n, $s)
 	{
 		$this->nome = $n;
-		$this->sexo = $s;
-		
+		$this->sexo = $s;		
 	}
 
 	public function getNome()
