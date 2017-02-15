@@ -2,7 +2,7 @@
 require_once 'classes/CSVParser.php';
 
 $csv = new CSVParser('clientes.csv', ';');
-$csv->parser();
+$csv->parse();
 
 while( $row = $csv->fetch() ){
 	print $row['Cliente'] . ' - ';
